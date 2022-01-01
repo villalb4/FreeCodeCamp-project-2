@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <article class="container">
+
+    <section class="text">
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </section>
+
+    <main>
+      <section class="card">
+        <form id="survey-form">
+
+          <section class="l-name">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </section>
+
+          <section class="l-email">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+          </section>
+
+          <section class="l-age">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" id="number" name="number" placeholder="Age" min="10" max="90">
+          </section>
+
+          <section class="l-job">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="job" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">student</option>
+              <option value="job">Full time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer Time Lerner</option>
+              <option value="other">Other</option>
+            </select>
+          </section>
+
+          <section class="radio">
+            <label>
+              <input type="radio" value="definitely" name="recomender">Definitely
+            </label>
+
+            <label>
+              <input type="radio" value="maybe" name="recomender">Maybe
+            </label>
+
+            <label>
+              <input type="radio" value="not-sure" name="recomender">Not sure
+            </label>
+          </section>
+
+          <section class="fav">
+            <p>What is your favorite feature of FreeCodeCamp</p>
+            <select id="most-like" name="most-like" required>
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">community</option>
+              <option value="openSource">Open Source</option>
+            </select>
+          </section>
+
+          <section class="checkbox">
+            <p>What would you like to see improved?</p>
+            <label>
+              <input type="checkbox" value="frontendProjects" name="frontendProjects">Front-end Projects
+            </label>
+
+            <label>
+              <input type="checkbox" value="backendProjects" name="backendProjects">Back-end Projects
+            </label>
+
+            <label>
+              <input type="checkbox" value="challenges" name="challenges">Challenges
+            </label>
+
+            <label>
+              <input type="checkbox" value="wiki" name="wiki">Wiki
+            </label>
+
+            <label>
+              <input type="checkbox" value="forum" name="forum">Forum
+            </label>
+          </section>
+
+          <section class="text-area">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" placeholder="Enter you comment here..."></textarea>
+          </section>
+
+          <section class="text-area">
+            <button type="submit" id="submit" name="submit">Submit</button>
+          </section>
+        </form>
+      </section>
+    </main>
+
+  </article>
+</body>
+</html>
