@@ -5,36 +5,67 @@
 }
 
 body {
-  background-color: #b6b6b6;
+  background-color: white;
   display: flex;
   flex-direction: row-reverse;
   gap: 30px;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: sans-serif;
 }
 
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: 0px 10px 30px #888888;
+  border-radius: 10px;
+}
 main {
   display: flex;
   flex-direction: column;
   display: inline-block;
-  background-color: green;
 }
 .card {
   background-color: white;
   display: inline-block;
   display: flex;
   flex-direction: column;
-}
-.container {
-  display: flex;
-  flex-direction: row-reverse;
-}
-form {
-  padding: 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 
 .text {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+
+  background-image: url(https://i.pinimg.com/736x/10/6a/99/106a99f584d257ef0eea36614a8a95c4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  margin-top: 15px;
+  padding:  0 50px;
+  color: black;
+}
+.thanks {
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+
+
+form {
+  padding: 10px;
+
+}
+
+.l-name, .l-email, .l-age, .radio , .checkbox {
+  display: flex;
+  flex-direction: column;
 }
